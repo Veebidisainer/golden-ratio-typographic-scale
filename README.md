@@ -1,4 +1,4 @@
-# The Golden Ratio Based Typographic Scale for SASS
+# The Golden Ratio Based Typographic Scale for Sass
 Easy and ready to use golden ratio based typographic scale with minimums and maximums for font-size.
 
 ## Inspired by
