@@ -11,8 +11,8 @@
 /// @param {Number}   $viewPortHeight    - The multiple of golden ratio for a vmin font-size
 
 
-$golden:	1.618;
-$at_desktop:768px;
+$golden:			1.618;
+$at_desktop:	768px;
 
 /*  |---------------| Mobile First |---------------|  */
 @media screen and (max-width: $at_desktop ) {	
