@@ -8,26 +8,26 @@
 
 /// Taken from https://github.com/etchedprints/Responsive-Design-with-Golden-Ratio
 /// @param {Number}   $golden			 - The golden ratio, a basis for the typographic scale
-/// @param {Number}   $at_desktop        - The breaking point between mobile and desktop views
-/// @param {Number}   $viewPortHeight    - The multiple of golden ratio for a vmin font-size
+/// @param {Number}   $at-desktop        - The breaking point between mobile and desktop views
+/// @param {Number}   $view-port-height    - The multiple of golden ratio for a vmin font-size
 
 
 $golden:			1.618;
-$at_desktop:	768px;
+$at-desktop:	768px;
 
 /*  |---------------| Mobile First |---------------|  */
-@media screen and (max-width: $at_desktop ) {	
+@media screen and (max-width: $at-desktop ) {	
   body {
-	$viewPortHeight: $golden * 1.618vmin !global;
+	$view-port-height: $golden * 1.618vmin !global;
 	
   }
 }
 
 
 /*  |---------------| Desktop |---------------|  */
-@media screen and (min-width: $at_desktop ) {	
+@media screen and (min-width: $at-desktop ) {	
   body {
-    $viewPortHeight: $golden * 0.618vmin !global;
+    $view-port-height: $golden * 0.618vmin !global;
 	
   } 
 }
@@ -49,12 +49,12 @@ $type3:		$type5 - $type4;
 $type2:		$type3 / $golden;			
 $type1:		$type3 - $type2;
 
-$h1: $type5 * $viewPortHeight;
-$h2: $type4 * $viewPortHeight;
-$h3: $type3 * $viewPortHeight;
-$h4: $type2 * $viewPortHeight;
-$h5: $type1 * $viewPortHeight;
-$h6: $type1 * $viewPortHeight;
+$h1: $type5 * $view-port-height;
+$h2: $type4 * $view-port-height;
+$h3: $type3 * $view-port-height;
+$h4: $type2 * $view-port-height;
+$h5: $type1 * $view-port-height;
+$h6: $type1 * $view-port-height;
 
 
 /*  |---------------| The Calculation of the Edge Cases |---------------|  */
